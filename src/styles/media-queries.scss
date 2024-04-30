@@ -1,0 +1,49 @@
+@media (max-width: 1040px) {
+    .main_container {
+        width: calc(100vw - 40px);
+    }
+}
+
+@media (max-width: 565px) {
+    .main_container {
+        padding: 15px 10px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .container,
+    .setting_container,
+    .geneate_password_btn,
+    .password_display_block {
+        width: 100%;    
+    }
+}
+
+@media (max-width: 490px) {
+    .slider_password_length {
+        width: 100%;
+        margin: 0px 5px 0px 5px;
+    }
+}
+
+@media (max-width: 385px) {
+    .main_heading {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}

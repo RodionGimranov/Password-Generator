@@ -8,7 +8,7 @@ const i18n = createI18n({
       message: {
         passwordGenerator: "Password Generator",
         generateSecurePassword: "Generate a secure, random password",
-        copy: "Copied!",
+        copy: "Password copied!",
         uppercases: "Uppercases (A-Z)",
         lowercases: "Lowercases (a-z)",
         numbers: "Numbers (0-9)",
@@ -21,7 +21,7 @@ const i18n = createI18n({
       message: {
         passwordGenerator: "Генератор Паролей",
         generateSecurePassword: "Создайте безопасный, случайный пароль",
-        copy: "Скопировано!",
+        copy: "Пароль скопирован!",
         uppercases: "Прописные буквы (A-Z)",
         lowercases: "Строчные буквы (a-z)",
         numbers: "Цифры (0-9)",

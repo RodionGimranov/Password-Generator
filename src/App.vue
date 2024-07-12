@@ -1,48 +1,48 @@
 <template>
   <main class="main_container">
-    <VueMainHeading />
-    <VueChangeLanguage />
-    <VuePasswordDisplay :password="passwordText" />
+    <mainHeading />
+    <changeLanguage />
+    <passwordDisplay :password="passwordText" />
     <section class="setting_container">
-      <VueUppercases
+      <uppercasesCharacters
         :uppercasesArray="handleUppercasesArray"
         @toggle-uppercase="toggleIncludeUppercases"
       />
-      <VueLowercases
+      <lowercasesCharacters
         :lowercasesArray="handleLowercasesArray"
         @toggle-lowercases="toggleIncludeLowercases"
       />
-      <VueNumbers :numbersArray="handleNumbersArray" @toggle-numbers="toggleIncludeNumbers" />
-      <VueSymbols :symbolsArray="handleSymbolsArray" @toggle-symbols="toggleIncludeSymbols" />
-      <VuePasswordLength @password-length="handlePasswordLength" />
+      <numbersCharacters :numbersArray="handleNumbersArray" @toggle-numbers="toggleIncludeNumbers" />
+      <symbolsCharacters :symbolsArray="handleSymbolsArray" @toggle-symbols="toggleIncludeSymbols" />
+      <passwordLength @password-length="handlePasswordLength" />
     </section>
-    <VueGenerateButton @click="generatePassword" />
+    <generateButton @click="generatePassword" />
   </main>
 </template>
 
 <script>
-import VueMainHeading from "./components/VueMainHeading.vue";
-import VueChangeLanguage from "./components/VueChangeLanguage.vue";
-import VuePasswordDisplay from "./components/VuePasswordDisplay.vue";
-import VueUppercases from "./components/VueUppercases.vue";
-import VueLowercases from "./components/VueLowercases.vue";
-import VueNumbers from "./components/VueNumbers.vue";
-import VueSymbols from "./components/VueSymbols.vue";
-import VuePasswordLength from "./components/VuePasswordLength.vue";
-import VueGenerateButton from "./components/VueGenerateButton.vue";
+import mainHeading from "./components/mainHeading.vue";
+import changeLanguage from "./components/changeLanguage.vue";
+import passwordDisplay from "./components/passwordDisplay.vue";
+import uppercasesCharacters from "./components/uppercasesCharacters.vue";
+import lowercasesCharacters from "./components/lowercasesCharacters.vue";
+import numbersCharacters from "./components/numbersCharacters.vue";
+import symbolsCharacters from "./components/symbolsCharacters.vue";
+import passwordLength from "./components/passwordLength.vue";
+import generateButton from "./components/generateButton.vue";
 
 export default {
   name: "App",  
   components: {
-    VueMainHeading,
-    VueChangeLanguage,
-    VuePasswordDisplay,
-    VueUppercases,
-    VueLowercases,
-    VueNumbers,
-    VueSymbols,
-    VuePasswordLength,
-    VueGenerateButton,
+    mainHeading,
+    changeLanguage,
+    passwordDisplay,
+    uppercasesCharacters,
+    lowercasesCharacters,
+    numbersCharacters,
+    symbolsCharacters,
+    passwordLength,
+    generateButton,
   },
   data() {
     return {

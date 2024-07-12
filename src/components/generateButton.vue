@@ -56,7 +56,6 @@ export default {
 
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
     border: 1px solid transparent;
-    // think about this sheet!!
     background: transparent;
 
     .btn_icon {
